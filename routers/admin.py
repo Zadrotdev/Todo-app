@@ -7,7 +7,7 @@ from models import Assignment
 from schemas import *
 from .auth import get_current_user
 
-router = APIRouter(prefix="/admin", tags=["admin"])
+router = APIRouter(prefix="/admin", tags=["Admin"])
 
 user_dependency = Annotated[dict, Depends(get_current_user)]
 
